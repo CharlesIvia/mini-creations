@@ -1,10 +1,8 @@
 let myInput = document.querySelector(".custom-input");
 let myList = document.querySelectorAll(".custom-list li a");
 
-myInput.interimResults = true;
 myInput.addEventListener("input", () => {
   myList.forEach((val) => {
-    console.log(myInput.value.toLowerCase());
     if (
       val.textContent.toLowerCase().indexOf(myInput.value.toLowerCase()) == -1
     ) {
