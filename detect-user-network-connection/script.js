@@ -14,3 +14,10 @@ function userHasNetwork(online) {
     element.innerText = "Offline";
   }
 }
+
+//Check connection when page initially loads
+
+window.addEventListener("load", () => {
+  userHasNetwork(navigator.onLine);
+});
+
