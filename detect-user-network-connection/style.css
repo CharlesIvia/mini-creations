@@ -1,0 +1,30 @@
+body {
+  background-color: #555;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.status {
+  padding: 40px;
+  min-width: 120px;
+  border-radius: 20px;
+  background-color: #eee;
+  text-align: center;
+  font-size: 80px;
+}
+
+.status.online {
+  border: 8px solid #41a700;
+}
+
+.status.offline {
+  border: 8px solid #f15c4f;
+  color: #f15c4f;
+}
