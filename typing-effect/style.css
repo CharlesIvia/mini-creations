@@ -1,3 +1,4 @@
+/* Initial */
 :root {
   --cream: #eaecef;
   --dark: #3e4147;
@@ -20,6 +21,8 @@ body {
   color: var(--dark);
 }
 
+/* Section */
+
 section {
   height: 90vh;
   display: flex;
@@ -41,11 +44,14 @@ section p {
   background-color: var(--dark);
   display: inline-block;
   margin-left: 0.2rem;
+  animation: blink 1s infinite;
 }
 
 .cursor.typing {
   animation: none;
 }
+
+/* Footer */
 
 footer {
   display: flex;
@@ -58,4 +64,19 @@ footer {
 footer a {
   color: var(--orange);
   text-decoration: none;
+}
+
+/* Animation */
+
+@keyframes blink {
+  0% {
+    background: var(--dark);
+  }
+
+  50% {
+    background: var(--cream);
+  }
+  100% {
+    background: var(--dark);
+  }
 }
