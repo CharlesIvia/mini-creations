@@ -80,3 +80,11 @@ footer a {
     background: var(--dark);
   }
 }
+
+/* Responsiveness */
+
+@media screen and (max-width: 768px) {
+  section p {
+    font-size: 3rem;
+  }
+}
