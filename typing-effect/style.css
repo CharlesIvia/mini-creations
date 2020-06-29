@@ -26,3 +26,23 @@ section {
   align-items: center;
   justify-content: center;
 }
+
+section p {
+  font-size: 6.4rem;
+  font-weight: 500;
+}
+
+.typed-text {
+  color: var(--orange);
+}
+
+.cursor {
+  width: 0.3rem;
+  background-color: var(--dark);
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+
+.cursor.typing {
+  animation: none;
+}
