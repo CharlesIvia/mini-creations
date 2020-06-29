@@ -1,0 +1,11 @@
+:root {
+  --cream: #eaecef;
+  --dark: #3e4147;
+  --orange: #cc4425;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
