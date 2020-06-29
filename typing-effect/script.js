@@ -25,7 +25,6 @@ function type() {
   }
 }
 
-
 //Erase characters
 
 function erase() {
@@ -47,7 +46,14 @@ function erase() {
     if (textArrayIndex >= textArray.length) {
       textArrayIndex = 0;
     }
-
     setTimeout(type, typingDelay + 1100);
   }
 }
+
+//Event listeners
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (textArray.length) {
+    setTimeout(type, newTextDelay + 250);
+  }
+});
