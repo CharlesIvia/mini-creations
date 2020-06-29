@@ -22,6 +22,7 @@ function type() {
     setTimeout(type, typingDelay);
   } else {
     cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
   }
 }
 
@@ -34,11 +35,11 @@ function erase() {
 
   //Erase characters from string
   if (charIndex > 0) {
-    typedTextSpan.textContent += textArray[textArrayIndex].substring(
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(
       0,
       charIndex - 1
     );
-    charIndex - 1;
+    charIndex--;
     setTimeout(erase, erasingDelay);
   } else {
     cursorSpan.classList.remove("typing");
