@@ -25,4 +25,29 @@ function type() {
   }
 }
 
-type();
+
+//Erase characters
+
+function erase() {
+  if (!cursorSpan.classList.contains("typing")) {
+    cursorSpan.classList.add("typing");
+  }
+
+  //Erase characters from string
+  if (charIndex > 0) {
+    typedTextSpan.textContent += textArray[textArrayIndex].substring(
+      0,
+      charIndex - 1
+    );
+    charIndex - 1;
+    setTimeout(erase, erasingDelay);
+  } else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if (textArrayIndex >= textArray.length) {
+      textArrayIndex = 0;
+    }
+
+    setTimeout(type, typingDelay + 1100);
+  }
+}
