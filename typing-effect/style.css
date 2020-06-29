@@ -46,3 +46,16 @@ section p {
 .cursor.typing {
   animation: none;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 1.6rem;
+}
+
+footer a {
+  color: var(--orange);
+  text-decoration: none;
+}
