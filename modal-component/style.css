@@ -1,0 +1,43 @@
+.container {
+  font-family: "Playfair Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.modal-container {
+  display: none;
+}
+
+.modal {
+  width: 600px;
+  max-width: 85%;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
+}
+
+h1 {
+  color: #202329;
+}
+p {
+  color: #40434a;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #202329;
+  font-family: "Playfair Display", serif;
+  border: none;
+  background: #009a9c;
+  color: #efeeeb;
+  padding: 7px 14px;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
